@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fiche de test</title>
+    <title>Reconditionnement</title>
 </head>
 <body>
     <header>
@@ -26,13 +26,11 @@
         <input type="name" placeholder="PRENOM"/>
         <input type="text" placeholder="MARQUE"/>
         <input type="text" placeholder="MODELE"/>
-        <input type="text" placeholder="N° de série"/>
+        <input type="text" placeholder="N° de série" onBlur="this.value = this.value.toUpperCase()" required/>
         </div>
         <div class="check">
-        <span>Matériel à reconditionner</span><input type="checkbox"/>
-        <span>Pâte thermique à changer</span><input type="checkbox"/>
-        <span>Matériel à réparer</span><input type="checkbox"/>
-        <span>Matériel à démanteler</span><input type="checkbox"/>
+        <span>La matériel a bien été reconditionné</span><input type="checkbox"/>
+        <span>Le matériel a bien été testé</span><input type="checkbox"/>
         </div>
     </main>
     <main id="submit">
